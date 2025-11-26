@@ -1,0 +1,49 @@
+@import "../../assets/styles/variables";
+
+.home-page {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $space-2;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: $space-4;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: #666;
+}
+
+.add-post-section {
+  text-align: center;
+  margin-top: $space-6; /* 60px */
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .posts-grid {
+    grid-template-columns: repeat(2, 370px);
+  }
+}
+
+@media (max-width: 800px) {
+  .posts-grid {
+    grid-template-columns: 370px;
+  }
+
+  .home-page {
+    padding: 20px 0;
+  }
+}

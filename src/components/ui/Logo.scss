@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+
+  &__text {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__icon {
+    width: 42px;
+    height: 30px;
+  }
+}
+
+// Адаптивность
+@media (max-width: 768px) {
+  .logo {
+    gap: 8px;
+
+    &__text {
+      font-size: 20px;
+    }
+
+    &__icon {
+      width: 35px;
+      height: 25px;
+    }
+  }
+}

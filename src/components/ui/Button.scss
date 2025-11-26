@@ -1,0 +1,51 @@
+@import "../../assets/styles/variables";
+
+.btn {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 13px;
+  letter-spacing: 0%;
+  color: $white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    background: $accent;
+
+    &:hover:not(:disabled) {
+      background: darken($accent, 10%);
+    }
+  }
+
+  &--secondary {
+    background: $primary;
+
+    &:hover:not(:disabled) {
+      background: darken($primary, 10%);
+    }
+  }
+
+  &--medium {
+    width: 294px;
+    height: 51px;
+    padding: 19px 30px;
+  }
+
+  &--small {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
